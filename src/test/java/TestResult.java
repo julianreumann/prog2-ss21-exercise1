@@ -68,6 +68,21 @@ public class TestResult {
         List<Integer> expected = Arrays.asList(null,67,40,33);
         assertEquals(expected, calc);
     }
+
+
+    @DisplayName("#7 Size of array while transformation")
+    @Test
+    public void testGradingStudents_SizeOfArrayWhileTransformation() {
+        List<Integer> result = Arrays.asList(4, 33, 67, 38, 33);
+        List<Integer> calc = Result.gradingStudents(result);
+        List<Integer> expected =Arrays.asList(33, 67, 40, 33);
+        assertEquals(expected.size(), calc.size());
+    }
+
+
+
+
+
 }
 
 
